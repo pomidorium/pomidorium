@@ -1,0 +1,18 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [{
+            "match": "(app/Models|database/factories|database/migrations)/.*\\.php$",
+            "cmd": "composer run ide-helper"
+        }]
+    },
+    "[php]": {
+        "editor.defaultFormatter": "open-southeners.laravel-pint",
+        "editor.formatOnSave": true
+    },
+    "php.suggest.basic": false,
+    "phpstan.binCommand": [
+        "./vendor/bin/phpstan",
+        "--memory-limit=1G",
+    ],
+    "phpstan.enabled": true
+}
